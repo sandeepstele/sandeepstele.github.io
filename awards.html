@@ -1,23 +1,29 @@
+---
+layout: none
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sandeep S • Awards</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
-  <!-- shared header -->
-  <!--#include virtual="partials/header.html"-->
+  {% include header.html %}
 
   <main id="awards">
-    <h2>Awards</h2>
-    <!-- TODO: Add your honors & awards here -->
+    <h2>Honors &amp; Awards</h2>
+    <ul>
+      <li>Winner, Karnataka State Police Datathon 2024</li>
+      <li>Runner-up, Ideathon Invente ’23; Trump the Aces ’23</li>
+      <li>Multiple circuit-design wins (REC, SSN-CE, CEG, Coulomb) 2022–2023</li>
+    </ul>
   </main>
 
-  <!-- shared footer -->
-  <!--#include virtual="partials/footer.html"-->
+  {% include footer.html %}
 
 </body>
 </html>

@@ -1,23 +1,39 @@
+---
+layout: none
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sandeep S • Projects</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
-  <!-- shared header -->
-  <!--#include virtual="partials/header.html"-->
+  {% include header.html %}
 
   <main id="projects">
     <h2>Projects</h2>
-    <!-- TODO: Add your project cards here -->
+    <div class="card">
+      <h3>LLM-Based Automation Agent</h3>
+      <p>Secure GPT-4o-Mini agent parsing &amp; executing English tasks via REST; containerized with Docker/Podman.</p>
+      <p><strong>Tech:</strong> Python · FastAPI · GPT-4o-Mini · Docker · REST API · SQLite</p>
+    </div>
+    <div class="card">
+      <h3>Crime Analysis &amp; Prediction</h3>
+      <p>Dynamic dashboard for Karnataka Police hackathon: geospatial &amp; time-series forecasting.</p>
+      <p><strong>Tech:</strong> Python · Django · Google Geocoding · Prophet · Tableau · Folium</p>
+    </div>
+    <div class="card">
+      <h3>Multimodal OA Detection App</h3>
+      <p>Flask app fusing TensorFlow &amp; XGBoost + RAG pipeline for auto-reports &amp; chatbot.</p>
+      <p><strong>Tech:</strong> Flask · TensorFlow · FAISS · OpenAI API · HTML/CSS/JS</p>
+    </div>
   </main>
 
-  <!-- shared footer -->
-  <!--#include virtual="partials/footer.html"-->
+  {% include footer.html %}
 
 </body>
 </html>

@@ -1,31 +1,48 @@
-/* Reset & Base */
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: sans-serif; line-height: 1.6; background: #f9f9f9; color: #333; }
-a { color: #007acc; text-decoration: none; }
-a:hover { text-decoration: underline; }
+/* basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Header */
-.site-header { background: #007acc; color: #fff; text-align: center; padding: 2rem 1rem; }
-.name { font-size: 2.5rem; margin-bottom: 0.5rem; }
-.contact { margin-bottom: 0.5rem; }
-.social-nav a { margin: 0 0.5rem; font-weight: bold; color: #fff; }
+/* type & layout */
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  background: #fafafa;
+  color: #333;
+  padding: 1rem;
+}
 
-/* Main Layout */
-main { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
-section { margin-bottom: 2rem; }
-section h2 { font-size: 1.8rem; color: #007acc; border-bottom: 2px solid #007acc; padding-bottom: 0.3rem; margin-bottom: 1rem; }
+.site-header,
+.site-footer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 
-/* Cards */
-.card { background: #fff; padding: 1.2rem; margin-bottom: 1rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-.card h3 { margin-bottom: 0.5rem; color: #005fa3; }
-.card p + ul { margin-top: 0.5rem; }
-ul { list-style: disc inside; }
+.main-nav a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #007acc;
+}
 
-/* Footer */
-.site-footer { text-align: center; padding: 1rem 0; font-size: 0.9rem; color: #666; }
+.main-nav a:hover {
+  text-decoration: underline;
+}
 
-/* Responsive */
-@media (max-width: 600px) {
-  .name { font-size: 2rem; }
-  section h2 { font-size: 1.5rem; }
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin-left: 1.25rem;
+  list-style: disc;
 }

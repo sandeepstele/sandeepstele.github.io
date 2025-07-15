@@ -1,15 +1,18 @@
+---
+layout: none
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sandeep S • Home</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
-  <!-- shared header -->
-  <!--#include virtual="partials/header.html"-->
+  {% include header.html %}
 
   <main>
     <!-- Education -->
@@ -22,7 +25,8 @@
           CGPA: 8.77
         </p>
         <p>
-          Courses: Analog &amp; Digital Circuits, Control Systems, DSP, VLSI Design, Medical Electronics
+          Courses: Analog &amp; Digital Circuits, Control Systems, DSP,
+          VLSI Design, Medical Electronics
         </p>
       </div>
       <div class="card">
@@ -32,7 +36,8 @@
           CGPA: 8.45
         </p>
         <p>
-          Courses: Machine Learning, App Development, Business Analytics, DSA, DBMS, Linux
+          Courses: Machine Learning, App Development, Business Analytics,
+          DSA, DBMS, Linux
         </p>
       </div>
     </section>
@@ -89,8 +94,7 @@
     </section>
   </main>
 
-  <!-- shared footer -->
-  <!--#include virtual="partials/footer.html"-->
+  {% include footer.html %}
 
 </body>
 </html>
