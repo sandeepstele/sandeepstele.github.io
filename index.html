@@ -3,101 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sandeep S • Portfolio</title>
+  <title>Sandeep S • Home</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <!-- Header with name & contacts (from resume)  [oai_citation:0‡Sandeep-Resume%202025.pdf.pdf](file-service://file-1AFLpTLwfUphBNvnTf78PX) -->
-  <header class="site-header">
-    <h1 class="name">Sandeep S</h1>
-    <p class="contact">
-      <a href="mailto:sandeep.sath7@gmail.com">sandeep.sath7@gmail.com</a>  |  +91-7550112670
-    </p>
-    <nav class="social-nav">
-      <a href="https://github.com/sandepstele" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/sandeepstele/" target="_blank">LinkedIn</a>
-    </nav>
-  </header>
+
+  <!-- shared header -->
+  <!--#include virtual="partials/header.html"-->
 
   <main>
-    <!-- Education  [oai_citation:1‡Sandeep-Resume%202025.pdf.pdf](file-service://file-1AFLpTLwfUphBNvnTf78PX) -->
+    <!-- Education -->
     <section id="education">
       <h2>Education</h2>
       <div class="card">
         <h3>Easwari Engineering College, Chennai</h3>
-        <p><strong>B.E. Electronics &amp; Communication</strong> (2021–2025)<br/>
-          CGPA: 8.77</p>
-        <p>Courses: Analog &amp; Digital Circuits, Control Systems, DSP, VLSI Design, Medical Electronics</p>
+        <p>
+          <strong>B.E. Electronics &amp; Communication</strong> (2021–2025)<br/>
+          CGPA: 8.77
+        </p>
+        <p>
+          Courses: Analog &amp; Digital Circuits, Control Systems, DSP, VLSI Design, Medical Electronics
+        </p>
       </div>
       <div class="card">
         <h3>IIT Madras, Chennai</h3>
-        <p><strong>B.Sc. Data Science &amp; Applications</strong> (2022–2026)<br/>
-          CGPA: 8.45</p>
-        <p>Courses: Machine Learning, App Development, Business Analytics, DSA, DBMS, Linux</p>
+        <p>
+          <strong>B.Sc. Data Science &amp; Applications</strong> (2022–2026)<br/>
+          CGPA: 8.45
+        </p>
+        <p>
+          Courses: Machine Learning, App Development, Business Analytics, DSA, DBMS, Linux
+        </p>
       </div>
     </section>
 
-    <!-- Experience  [oai_citation:2‡Sandeep-Resume%202025.pdf.pdf](file-service://file-1AFLpTLwfUphBNvnTf78PX) -->
+    <!-- Experience -->
     <section id="experience">
       <h2>Experience</h2>
       <div class="card">
         <h3>Teaching Assistant, Business Data Management (MS2001)</h3>
         <p><em>IIT Madras</em> • Jan 2024–Present</p>
         <ul>
-          <li>Conduct TA sessions; generate &amp; validate datasets via Python automation.</li>
-          <li>Built backend scripts to verify student submissions.</li>
+          <li>Conduct TA sessions; automate dataset generation &amp; validation in Python.</li>
+          <li>Built backend scripts to verify and grade student submissions.</li>
         </ul>
       </div>
       <div class="card">
         <h3>Secretary, Paradox Student Fest</h3>
         <p><em>IIT Madras</em> • Jan 2023–Present</p>
         <ul>
-          <li>Headed a ₹20 M budget fest (4 k+ attendees, 17 departments, 35+ events).</li>
-          <li>Deputy Head of Finance &amp; Ops: managed ₹13 M budget, optimized procurement &amp; inventory.</li>
+          <li>Headed a ₹20 M budget fest (4 k+ attendees, 17 depts, 35+ events).</li>
+          <li>Deputy Head of Finance &amp; Ops: managed ₹13 M budget, optimized procurement.</li>
         </ul>
       </div>
       <div class="card">
         <h3>Project Intern</h3>
         <p><em>HCL Technologies, Chennai</em> • Jun 2023–Jul 2023</p>
         <ul>
-          <li>Developed a ML-based course recommendation system.</li>
+          <li>Developed an ML-based course recommendation system.</li>
         </ul>
       </div>
     </section>
 
-    <!-- Research Work  [oai_citation:3‡Sandeep-Resume%202025.pdf.pdf](file-service://file-1AFLpTLwfUphBNvnTf78PX) -->
+    <!-- Research -->
     <section id="research">
       <h2>Research</h2>
       <div class="card">
         <h3>Early OA Detection</h3>
         <p>
-          Multimodal approach combining X-rays &amp; clinical data for early Osteoarthritis grading.<br/>
+          Multimodal approach combining X-rays &amp; clinical data for early
+          Osteoarthritis grading.<br/>
           <em>IEEE CSNT ’25</em>
         </p>
       </div>
     </section>
 
-    <!-- Projects  -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="card">
-        <h3>LLM-Based Automation Agent</h3>
-        <p>Secure GPT-4o-Mini agent parsing &amp; executing English tasks via REST; containerized with Docker/Podman.</p>
-        <p><strong>Tech:</strong> Python · FastAPI · GPT-4o-Mini · Docker · REST API · SQLite</p>
-      </div>
-      <div class="card">
-        <h3>Crime Analysis &amp; Prediction</h3>
-        <p>Dynamic dashboard for Karnataka Police hackathon: geospatial &amp; time-series forecasting.</p>
-        <p><strong>Tech:</strong> Python · Django · Google Geocoding · Prophet · Tableau · Folium</p>
-      </div>
-      <div class="card">
-        <h3>Multimodal OA Detection App</h3>
-        <p>Flask app fusing TensorFlow &amp; XGBoost + RAG pipeline for auto-reports &amp; chatbot.</p>
-        <p><strong>Tech:</strong> Flask · TensorFlow · FAISS · OpenAI API · HTML/CSS/JS</p>
-      </div>
-    </section>
-
-    <!-- Honors & Awards  [oai_citation:4‡Sandeep-Resume%202025.pdf.pdf](file-service://file-1AFLpTLwfUphBNvnTf78PX) -->
+    <!-- Honors & Awards -->
     <section id="awards">
       <h2>Honors &amp; Awards</h2>
       <ul>
@@ -108,8 +89,8 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <p>© 2025 Sandeep S</p>
-  </footer>
+  <!-- shared footer -->
+  <!--#include virtual="partials/footer.html"-->
+
 </body>
 </html>
