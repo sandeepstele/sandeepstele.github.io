@@ -5,25 +5,45 @@ title: Work
 ---
 
 <section id="projects">
-  <h2>Projects</h2>
+  <h2>Featured Projects</h2>
 
   <div class="card">
-    <h3>LLM-Based Automation Agent</h3>
-    <p>Secure GPT-4o-Mini agent parsing &amp; executing English tasks via REST; containerized with Docker/Podman.</p>
-    <p><strong>Tech:</strong> Python · FastAPI · GPT-4o-Mini · Docker · REST API · SQLite</p>
+    <h3>LLM-Based CI/CD Automation Agent</h3>
+    <p>An automation agent that reads plain English and performs tasks via a sandboxed API.</p>
+    <p><strong>Stack:</strong> Python · FastAPI · GPT-4o-Mini · Docker/Podman · SQLite · REST</p>
   </div>
 
   <div class="card">
-    <h3>Crime Analysis &amp; Prediction</h3>
-    <p>Dynamic dashboard for Karnataka Police hackathon: geospatial &amp; time-series forecasting.</p>
-    <p><strong>Tech:</strong> Python · Django · Google Geocoding · Prophet · Tableau · Folium</p>
+    <h3>Crime Analysis &amp; Prediction — Karnataka Police Datathon (Winner)</h3>
+    <p>Portal and dashboard for police FIR data with geospatial and behaviour analysis, plus time-series forecasts.</p>
+    <p><strong>Stack:</strong> Python · Django · Pandas · Scikit-Learn · Prophet · Tableau · Folium · Google Geocoding</p>
   </div>
 
   <div class="card">
-    <h3>Multimodal OA Detection App</h3>
-    <p>Flask app fusing TensorFlow &amp; XGBoost + RAG pipeline for auto-reports &amp; chatbot.</p>
-    <p><strong>Tech:</strong> Flask · TensorFlow · FAISS · OpenAI API · HTML/CSS/JS</p>
+    <h3>Multimodal OA Detection with LLM-Generated Insights</h3>
+    <p>Flask app that fuses X-ray features with clinical data to predict OA and severity. RAG layer drafts personalised reports and powers a simple clinical chatbot.</p>
+    <p><strong>Stack:</strong> TensorFlow · XGBoost · Python · Flask · HTML/CSS/JS · FAISS · OpenAI API</p>
   </div>
+
+  <div class="card">
+    <h3>TDS Virtual TA — Async RAG QA Service</h3>
+    <p>Async FastAPI service that ingests notes and forums, makes embeddings, and serves RAG answers.</p>
+    <p><strong>Flow:</strong> /query → embedding → top‑K retrieval → prompt → GPT‑4o‑mini → answer + sources</p>
+  </div>
+
+  <div class="card">
+    <h3>Data Extraction &amp; Analysis Assistant</h3>
+    <p>FastAPI backend with a small HTML page where uploads are processed through LLM-generated Python code in a controlled runner.</p>
+    <p><strong>Key files:</strong> main.py · llm.py · task_engine.py · frontend.html · start.sh · scripts/</p>
+  </div>
+</section>
+
+<section id="earlier-projects">
+  <h2>Earlier Projects</h2>
+  <ul>
+    <li><strong>Course Recommendation System (HCLTech, 2023):</strong> Suggests courses from skills and experience using classical ML.</li>
+    <li><strong>ML-Enhanced Non-Invasive Glucometer (2022):</strong> Improved NIR-based glucose estimates (~82% accuracy).</li>
+  </ul>
 </section>
 
 <section id="publications">
@@ -31,9 +51,7 @@ title: Work
 
   <ul>
     <li>
-      Trishulam S., Sandeep S. et al., “Multimodal Osteoarthritis Detection,”
-      <em>IEEE CSNT ’25</em>.
+      "Modelling Clinical and Radiographic Data for Early Detection and Prediction of Osteoarthritis" — <em>IEEE CSNT 2025</em>.
     </li>
-    <!-- add more publication entries here -->
   </ul>
 </section>
