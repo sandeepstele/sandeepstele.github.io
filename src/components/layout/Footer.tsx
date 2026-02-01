@@ -23,7 +23,7 @@ export function Footer() {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com/in/sandeepstele"
+              href="https://www.linkedin.com/in/sandeepstele/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark transition-colors"
@@ -32,7 +32,7 @@ export function Footer() {
               <Linkedin size={20} />
             </a>
             <a
-              href="mailto:sandeep@example.com"
+              href="mailto:sandeep.sath7@gmail.com"
               className="text-gray-600 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark transition-colors"
               aria-label="Email"
             >

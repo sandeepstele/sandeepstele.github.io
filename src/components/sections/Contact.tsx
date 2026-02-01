@@ -24,9 +24,18 @@ export function Contact() {
             I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
           </motion.p>
           
+          <motion.div variants={fadeInUp} className="mb-6">
+            <div className="flex items-center justify-center gap-2 text-lg text-gray-700 dark:text-gray-300 mb-2">
+              <Mail size={20} className="text-primary-light dark:text-primary-dark" />
+              <a href="mailto:sandeep.sath7@gmail.com" className="hover:text-primary-light dark:hover:text-primary-dark transition-colors">
+                sandeep.sath7@gmail.com
+              </a>
+            </div>
+          </motion.div>
+          
           <motion.div variants={fadeInUp} className="flex flex-wrap justify-center gap-4 mb-8">
             <Button
-              onClick={() => window.location.href = 'mailto:sandeep@example.com'}
+              onClick={() => window.location.href = 'mailto:sandeep.sath7@gmail.com'}
               className="flex items-center gap-2"
             >
               <Mail size={20} />
@@ -61,7 +70,7 @@ export function Contact() {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com/in/sandeepstele"
+              href="https://www.linkedin.com/in/sandeepstele/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
@@ -70,7 +79,7 @@ export function Contact() {
               <Linkedin size={24} />
             </a>
             <a
-              href="mailto:sandeep@example.com"
+              href="mailto:sandeep.sath7@gmail.com"
               className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
               aria-label="Email"
             >

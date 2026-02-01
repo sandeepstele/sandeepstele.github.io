@@ -1,7 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Hero } from '@/components/sections/Hero';
 import { About } from '@/components/sections/About';
-import { Projects } from '@/components/sections/Projects';
 import { Contact } from '@/components/sections/Contact';
 
 export function Home() {
@@ -20,7 +19,6 @@ export function Home() {
       
       <Hero />
       <About />
-      <Projects />
       <Contact />
     </>
   );
