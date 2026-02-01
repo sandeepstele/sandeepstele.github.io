@@ -18,15 +18,16 @@ export function About() {
           
           <div className="max-w-3xl mx-auto space-y-6 text-lg text-gray-700 dark:text-gray-300">
             <p>
-              I work across <strong>machine learning</strong>, <strong>data engineering</strong>, and <strong>product</strong>. 
-              My projects include <strong>LLM agents</strong>, <strong>vector search</strong>, <strong>geospatial analysis</strong>, 
-              and <strong>medical imaging</strong>. I led <strong>Paradox'25</strong> at IIT Madras (~5,000 attendees) and 
-              published work on <strong>multimodal osteoarthritis detection</strong> (IEEE CSNT 2025).
+              I work across <strong>machine learning</strong>, <strong>data engineering</strong>, and <strong>product</strong>.
+              Currently building AI-powered systems at <strong>S2T AI</strong> and leading R&D at <strong>Vessel Match</strong>
+              (incubated at Nirmaan IIT Madras). My work includes <strong>LLM agents</strong>, <strong>RAG pipelines</strong>,
+              <strong>microservices architecture</strong>, and <strong>MLOps/DevOps workflows</strong>.
             </p>
             
             <p>
-              I focus on simple, reliable services: containerised apps, clean pipelines, and safe sandboxes. 
-              I value clear interfaces and good documentation as much as model accuracy.
+              I led <strong>Paradox'25</strong> at IIT Madras (~5,000 attendees) and published research on
+              <strong>multimodal osteoarthritis detection</strong> (IEEE CSNT 2025). Won the <strong>Karnataka State Police Datathon</strong>
+              among 30,000+ submissions. I focus on building reliable, scalable systems with clean interfaces and good documentation.
             </p>
             
             <div className="flex justify-center pt-6">

@@ -3,23 +3,23 @@ import { Skill } from '@/types';
 export const skills: Skill[] = [
   {
     category: 'Languages',
-    items: ['Python', 'SQL (SQLite/PostgreSQL)', 'Bash', 'TypeScript', 'JavaScript'],
+    items: ['Python', 'C++', 'Java', 'JavaScript', 'TypeScript', 'SQL (PostgreSQL/MySQL/MongoDB)', 'Neo4j', 'HTML'],
   },
   {
-    category: 'Frameworks',
-    items: ['FastAPI', 'Flask', 'Django', 'React', 'Node.js'],
+    category: 'Frameworks & Libraries',
+    items: ['PyTorch', 'TensorFlow', 'NumPy', 'Pandas', 'PydanticAI', 'FastAPI', 'React', 'LangChain', 'LangSmith', 'Next.js'],
+  },
+  {
+    category: 'Tools & Platforms',
+    items: ['Docker', 'Kubernetes', 'Git', 'Azure DevOps', 'AWS', 'GCP', 'Supabase', 'Redis', 'GitHub', 'TinyML'],
   },
   {
     category: 'ML / AI',
-    items: ['Scikit-Learn', 'TensorFlow/Keras', 'XGBoost', 'RAG (FAISS/Pinecone)', 'Prompt Engineering', 'Model Evaluation'],
+    items: ['RAG (FAISS/Pinecone)', 'LLM Orchestration', 'Prompt Engineering', 'XGBoost', 'Model Evaluation', 'Agentic Workflows'],
   },
   {
     category: 'Data',
-    items: ['Pandas', 'NumPy', 'ETL', 'Data Validation', 'Schema Design'],
-  },
-  {
-    category: 'Systems',
-    items: ['Docker/Podman', 'REST APIs', 'Async I/O', 'CI/CD', 'Git'],
+    items: ['Pandas', 'NumPy', 'ETL', 'Data Validation', 'Schema Design', 'Time Series Analysis'],
   },
   {
     category: 'Visualization',

@@ -4,12 +4,25 @@ export const experiences: Experience[] = [
   {
     id: 's2t-ai',
     company: 'S2T AI - AI Powered Investigations',
-    position: 'Software Engineer Intern',
+    position: 'Software Engineer L1',
     duration: 'Sept 2025 – Present',
     location: 'Singapore',
     description: [
-      'S2T develops AI-driven digital intelligence and forensics solutions for security, defense, law enforcement, and cyber domains',
-      'Worked on LLM-based automation, MLOps and DevOps pipelines, deploying machine learning models, and managing APIs for AI-driven applications',
+      'Streamlined data ingestion by building web crawlers and reverse-engineering APIs to ensure consistent data collection, optimized backend integration, and high-efficiency pipelines',
+      'Created an Agentic AI (MCP Driven) workflow for applications',
+      'Scaled, managed and maintained microservices via Kubernetes, managing DevOps/MLOps workflows',
+    ],
+  },
+  {
+    id: 'vessel-match',
+    company: 'Vessel Match (Incubated at Nirmaan IIT Madras)',
+    position: 'Founding Engineer - Head of Research & Workflows',
+    duration: 'May 2024 – Present',
+    location: 'Chennai, India',
+    description: [
+      'Led R&D of a production-ready multi-agentic workflow, combining RAG + agent orchestration to automate end-to-end maritime logistics and data processing',
+      'Worked on event-driven microservices architecture using AWS (Lambda, EC2) + FastAPI for a production platform',
+      'Scaled pipelines to process 200+ vessels/day; contributed to securing INR 700,000 seed funding and $2K AWS credits',
     ],
   },
   {

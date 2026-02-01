@@ -46,7 +46,7 @@ export function Contact() {
           >
             <motion.div variants={fadeInUp} className="flex items-center gap-2">
               <MapPin size={20} />
-              <span>Singapore / Chennai, India</span>
+              <span>Chennai, India</span>
             </motion.div>
           </motion.div>
           

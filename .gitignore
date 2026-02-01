@@ -35,17 +35,18 @@ build
 .env.development.local
 .env.test.local
 
-# Old files (backup)
-*.html.old
-*.css.old
+# Old Jekyll files (should be removed from repo)
 _includes/
 _layouts/
-404.html
-about.html
-awards.html
-contact.html
-courses.html
-projects.html
-publications.html
-resume.html
-work.html
+*.html
+!index.html
+css/style.css
+
+# Documentation files that cause Jekyll errors
+plans/
+INSTALL_NODEJS.md
+MIGRATION.md
+PROJECT_SUMMARY.md
+SETUP.md
+TESTING.md
+DEBUGGING.md

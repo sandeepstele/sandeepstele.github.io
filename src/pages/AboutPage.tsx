@@ -6,7 +6,6 @@ import { Education } from '@/components/sections/Education';
 import { Skills } from '@/components/sections/Skills';
 import { Publications } from '@/components/sections/Publications';
 import { Awards } from '@/components/sections/Awards';
-import { Courses } from '@/components/sections/Courses';
 import { fadeInUp } from '@/utils/animations';
 
 export function AboutPage() {
@@ -27,9 +26,9 @@ export function AboutPage() {
           >
             <h1 className="text-5xl font-bold mb-4">About Me</h1>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              I work across machine learning, data engineering, and product. My projects include LLM agents, 
-              vector search, geospatial analysis, and medical imaging. I focus on simple, reliable services 
-              with clean interfaces and good documentation.
+              Software Engineer at S2T AI and Founding Engineer at Vessel Match. Building AI-powered systems
+              with LLM agents, RAG pipelines, microservices architecture, and MLOps/DevOps workflows.
+              Published researcher and datathon winner focused on reliable, scalable solutions.
             </p>
           </motion.div>
         </Container>
@@ -39,7 +38,6 @@ export function AboutPage() {
         <Skills />
         <Publications />
         <Awards />
-        <Courses />
       </div>
     </>
   );

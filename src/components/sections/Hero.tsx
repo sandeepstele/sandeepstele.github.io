@@ -69,8 +69,8 @@ export function Hero() {
             transition={{ ...defaultTransition, delay: 0.4 }}
             className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-8"
           >
-            Software Engineer Intern at <strong>S2T AI (Singapore)</strong> working on LLM-based automation,
-            MLOps and DevOps pipelines for AI-driven digital intelligence solutions
+            Software Engineer at <strong>S2T AI</strong> and Founding Engineer at <strong>Vessel Match</strong>.
+            Building AI-powered systems with LLMs, RAG, and microservices architecture.
           </motion.p>
           
           <motion.div
