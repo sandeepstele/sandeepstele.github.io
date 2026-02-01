@@ -1,11 +1,15 @@
-import { ReactNode, ButtonHTMLAttributes } from 'react';
-import { motion } from 'framer-motion';
+import { ReactNode } from 'react';
+import { motion, MotionProps } from 'framer-motion';
 import clsx from 'clsx';
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps {
   children: ReactNode;
   variant?: 'primary' | 'secondary' | 'ghost';
   size?: 'sm' | 'md' | 'lg';
+  className?: string;
+  onClick?: () => void;
+  disabled?: boolean;
+  type?: 'button' | 'submit' | 'reset';
 }
 
 export function Button({
@@ -13,7 +17,9 @@ export function Button({
   variant = 'primary',
   size = 'md',
   className,
-  ...props
+  onClick,
+  disabled,
+  type = 'button',
 }: ButtonProps) {
   const baseStyles = 'rounded-lg font-medium transition-colors duration-200';
   
@@ -34,7 +40,9 @@ export function Button({
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       className={clsx(baseStyles, variants[variant], sizes[size], className)}
-      {...props}
+      onClick={onClick}
+      disabled={disabled}
+      type={type}
     >
       {children}
     </motion.button>
