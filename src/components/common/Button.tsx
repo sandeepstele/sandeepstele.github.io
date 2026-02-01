@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { motion, MotionProps } from 'framer-motion';
+import { motion } from 'framer-motion';
 import clsx from 'clsx';
 
 interface ButtonProps {
