@@ -3,11 +3,11 @@ import { Publication } from '@/types';
 export const publications: Publication[] = [
   {
     id: 'ieee-csnt-2025',
-    title: 'Modelling Clinical and Radiographic Data for Early Detection and Prediction of Osteoarthritis',
+    title: 'Knee Osteoarthritis Detection & Grading',
     authors: 'Sandeep S, et al.',
     venue: 'IEEE CSNT 2025 (VIT Bhopal)',
     year: '2025',
-    // link: '', // Add link when published
+    link: 'https://ieeexplore.ieee.org/document/10968009',
   },
   {
     id: 'indian-patent',
@@ -15,6 +15,5 @@ export const publications: Publication[] = [
     authors: 'Sandeep S',
     venue: 'Indian Patent Application No. 202541071393 A (Filed: 28 Jul \'25; Pub: 01 Aug \'25)',
     year: '2025',
-    // link: '', // Add patent link when available
   },
 ];

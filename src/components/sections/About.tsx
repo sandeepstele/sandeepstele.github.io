@@ -19,9 +19,10 @@ export function About() {
           <div className="max-w-3xl mx-auto space-y-6 text-lg text-gray-700 dark:text-gray-300">
             <p>
               I work across <strong>machine learning</strong>, <strong>data engineering</strong>, and <strong>product</strong>.
-              Currently building AI-powered systems at <strong>S2T AI</strong> and leading R&D at <strong>Vessel Match</strong>
-              (incubated at Nirmaan IIT Madras). My work includes <strong>LLM agents</strong>, <strong>RAG pipelines</strong>,
-              <strong>microservices architecture</strong>, and <strong>MLOps/DevOps workflows</strong>.
+              Currently pursuing an MSCS at <strong>University of Illinois Urbana-Champaign</strong> and interning at <strong>DRES</strong>,
+              building OCR and AI-powered document-processing pipelines. Previously a Software Engineer at <strong>S2T AI</strong> and
+              Founding Engineer at <strong>Vessel Match</strong> (incubated at Nirmaan IIT Madras). My work spans <strong>LLM agents</strong>,
+              <strong>RAG pipelines</strong>, <strong>microservices architecture</strong>, and <strong>MLOps/DevOps workflows</strong>.
             </p>
             
             <p>

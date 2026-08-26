@@ -52,8 +52,9 @@ export function AboutPage() {
           >
             <h1 className="text-5xl font-bold mb-4">About Me</h1>
             <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              Software Engineer at S2T AI and Founding Engineer at Vessel Match. Building AI-powered systems
-              with LLM agents, RAG pipelines, microservices architecture, and MLOps/DevOps workflows.
+              MSCS student at University of Illinois Urbana-Champaign and Graduate Intern at DRES.
+              Previously Software Engineer at S2T AI and Founding Engineer at Vessel Match. Building AI-powered
+              systems with LLM agents, RAG pipelines, microservices architecture, and MLOps/DevOps workflows.
               Published researcher and datathon winner focused on reliable, scalable solutions.
             </p>
           </motion.div>
