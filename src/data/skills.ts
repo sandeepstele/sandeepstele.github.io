@@ -3,14 +3,18 @@ import { Skill } from '@/types';
 export const skills: Skill[] = [
   {
     category: 'Languages',
-    items: ['Python', 'C++', 'Java', 'JavaScript', 'TypeScript', 'SQL'],
+    items: ['Python', 'C++', 'Java', 'TypeScript', 'SQL'],
   },
   {
-    category: 'Backend',
-    items: ['FastAPI', 'Django', 'React', 'PostgreSQL', 'MongoDB', 'Redis', 'Elasticsearch', 'PydanticAI', 'LangChain', 'PyTorch'],
+    category: 'ML & LLMs',
+    items: ['PyTorch', 'MLX', 'Hugging Face', 'LoRA', 'SFT', 'Preference Optimization (DPO/ORPO/RPO)', 'RAG', 'GraphRAG'],
   },
   {
-    category: 'Infrastructure & Tools',
-    items: ['Docker', 'Kubernetes', 'AWS', 'GCP', 'Azure DevOps', 'Git', 'Kafka', 'Celery', 'Prometheus', 'Grafana'],
+    category: 'AI Systems',
+    items: ['PydanticAI', 'LangChain', 'LangSmith', 'MCP'],
+  },
+  {
+    category: 'Backend & Infrastructure',
+    items: ['FastAPI', 'PostgreSQL', 'MongoDB', 'Redis', 'Elasticsearch', 'Kafka', 'Celery', 'Docker', 'Kubernetes', 'AWS', 'GCP'],
   },
 ];

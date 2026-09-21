@@ -7,6 +7,9 @@ export interface Project {
   github?: string;
   link?: string;
   featured?: boolean;
+  category?: string;
+  outcome?: string;
+  detail?: string;
 }
 
 export interface Experience {
@@ -35,10 +38,11 @@ export interface Skill {
 export interface Publication {
   id: string;
   title: string;
-  authors: string;
+  authors?: string;
   venue: string;
   year: string;
   link?: string;
+  description?: string;
 }
 
 export interface Award {

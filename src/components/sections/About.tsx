@@ -1,43 +1,27 @@
-import { motion } from 'framer-motion';
+import { ArrowUpRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Container } from '@/components/common/Container';
 import { Section } from '@/components/common/Section';
-import { Button } from '@/components/common/Button';
-import { fadeInUp } from '@/utils/animations';
 
 export function About() {
   return (
-    <Section id="about" className="bg-white dark:bg-gray-900">
+    <Section id="about" className="border-y border-[var(--line)]">
       <Container>
-        <motion.div
-          initial="initial"
-          whileInView="animate"
-          viewport={{ once: true }}
-          variants={fadeInUp}
-        >
-          <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
-          
-          <div className="max-w-3xl mx-auto space-y-6 text-lg text-gray-700 dark:text-gray-300">
-            <p>
-              I work across <strong>machine learning</strong>, <strong>data engineering</strong>, and <strong>product</strong>.
-              Currently pursuing an MSCS at <strong>University of Illinois Urbana-Champaign</strong> and interning at <strong>DRES</strong>,
-              building OCR and AI-powered document-processing pipelines. Previously a Software Engineer at <strong>S2T AI</strong> and
-              Founding Engineer at <strong>Vessel Match</strong> (incubated at Nirmaan IIT Madras). My work spans <strong>LLM agents</strong>,
-              <strong>RAG pipelines</strong>, <strong>microservices architecture</strong>, and <strong>MLOps/DevOps workflows</strong>.
-            </p>
-            
-            <p>
-              I led <strong>Paradox'25</strong> at IIT Madras (~5,000 attendees) and published research on
-              <strong>multimodal osteoarthritis detection</strong> (IEEE CSNT 2025). Won the <strong>Karnataka State Police Datathon</strong>
-              among 30,000+ submissions. I focus on building reliable, scalable systems with clean interfaces and good documentation.
-            </p>
-            
-            <div className="flex justify-center pt-6">
-              <Button onClick={() => window.location.href = '/about'}>
-                More About Me →
-              </Button>
+        <div className="grid gap-10 md:grid-cols-[1fr_1.4fr] md:gap-20">
+          <div>
+            <p className="eyebrow mb-5 text-[var(--accent)]">02 / A little background</p>
+            <h2 className="section-heading">Research-minded.<br /><em>Built for the real world.</em></h2>
+            <Link to="/about" className="text-link mt-7">The longer story <ArrowUpRight size={15} /></Link>
+          </div>
+          <div>
+            <p className="text-[15px] leading-8">My work moves between machine learning and the software around it: training models, building retrieval workflows, and getting them into production.</p>
+            <p className="mt-4 text-sm leading-7 text-[var(--muted)]">At S2T AI, that meant LLM and ML pipelines across approximately 20 microservices. At Vessel Match, it meant bringing hours of manual vessel matching down to minutes. I’m now pursuing a Master of Computer Science at UIUC, working at DRES, and serving as an Academic Assistant & Grader for BADM 557.</p>
+            <div className="mt-8 grid grid-cols-2 gap-6 border-t border-[var(--line)] pt-6">
+              <div><p className="serif text-4xl text-[var(--accent)]">~40K</p><p className="mt-2 text-xs leading-5 text-[var(--muted)]">requests / day supported<br />across S2T AI workflows</p></div>
+              <div><p className="serif text-4xl text-[var(--accent)]">200+</p><p className="mt-2 text-xs leading-5 text-[var(--muted)]">vessels / day processed<br />at Vessel Match</p></div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </Container>
     </Section>
   );

@@ -1,82 +1,54 @@
-import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
+import { ArrowUpRight, Menu, X } from 'lucide-react';
 import { Container } from '@/components/common/Container';
 import { ThemeToggle } from './ThemeToggle';
-import { MobileMenu } from './MobileMenu';
+import { profile } from '@/data/profile';
 
 const navItems = [
   { name: 'Home', path: '/' },
-  { name: 'About', path: '/about' },
   { name: 'Projects', path: '/projects' },
+  { name: 'About', path: '/about' },
   { name: 'Contact', path: '/contact' },
 ];
 
 export function Header() {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [open, setOpen] = useState(false);
   const location = useLocation();
+  const toggleRef = useRef<HTMLButtonElement>(null);
 
+  useEffect(() => { setOpen(false); }, [location.pathname]);
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+    if (!open) return;
+    const dismiss = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') { setOpen(false); toggleRef.current?.focus(); }
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    document.addEventListener('keydown', dismiss);
+    return () => document.removeEventListener('keydown', dismiss);
+  }, [open]);
 
   return (
-    <motion.header
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg'
-          : 'bg-transparent'
-      }`}
-    >
+    <header className="sticky top-0 z-50 border-b border-[var(--line)] bg-[var(--paper)]">
       <Container>
-        <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-xl font-bold text-gray-900 dark:text-white">
-            Sandeep S
+        <div className="flex h-[76px] items-center justify-between gap-4">
+          <Link to="/" aria-label="Sandeep Satheesh home" className="flex items-center gap-3">
+            <span className="serif flex h-9 w-9 items-center justify-center rounded-full bg-[var(--accent)] text-lg italic tracking-[-.1em] text-[var(--paper)]">ss.</span>
+            <span className="text-[13px] font-semibold tracking-tight">Sandeep Satheesh<span className="text-[var(--accent)]">.</span></span>
           </Link>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`text-gray-700 dark:text-gray-300 hover:text-primary-light dark:hover:text-primary-dark transition-colors ${
-                  location.pathname === item.path ? 'text-primary-light dark:text-primary-dark font-semibold' : ''
-                }`}
-              >
-                {item.name}
-              </Link>
-            ))}
-            <ThemeToggle />
+          <nav aria-label="Main navigation" className="hidden items-center gap-7 md:flex">
+            {navItems.map(item => <NavLink key={item.path} to={item.path} end={item.path === '/'} className={({ isActive }) => `text-xs transition-colors hover:text-[var(--accent)] ${isActive ? 'text-[var(--accent)]' : 'text-[var(--muted)]'}`}>{item.name}</NavLink>)}
           </nav>
-
-          {/* Mobile Menu Button */}
-          <div className="flex md:hidden items-center space-x-4">
+          <div className="flex items-center gap-3">
+            <a href={profile.resume} target="_blank" rel="noopener noreferrer" className="text-link mr-2 hidden lg:inline-flex">Résumé <ArrowUpRight size={14} /></a>
             <ThemeToggle />
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="p-2 text-gray-700 dark:text-gray-300"
-              aria-label="Toggle menu"
-            >
-              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
+            <button ref={toggleRef} className="icon-button md:hidden" onClick={() => setOpen(!open)} aria-expanded={open} aria-controls="mobile-navigation" aria-label={open ? 'Close navigation' : 'Open navigation'}>{open ? <X size={18} /> : <Menu size={18} />}</button>
           </div>
         </div>
+        {open && <nav id="mobile-navigation" aria-label="Mobile navigation" className="border-t border-[var(--line)] pb-5 pt-3 md:hidden">
+          {navItems.map(item => <NavLink key={item.path} to={item.path} end={item.path === '/'} onClick={() => setOpen(false)} className={({ isActive }) => `block rounded-sm px-2 py-3 text-sm ${isActive ? 'bg-[var(--accent-soft)] text-[var(--accent)]' : 'text-[var(--muted)]'}`}>{item.name}</NavLink>)}
+          <a href={profile.resume} target="_blank" rel="noopener noreferrer" className="text-link px-2 py-3">View résumé <ArrowUpRight size={14} /></a>
+        </nav>}
       </Container>
-
-      <MobileMenu
-        isOpen={isMobileMenuOpen}
-        onClose={() => setIsMobileMenuOpen(false)}
-        items={navItems}
-      />
-    </motion.header>
+    </header>
   );
 }

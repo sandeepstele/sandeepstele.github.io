@@ -1,40 +1,18 @@
 import { Helmet } from 'react-helmet-async';
-import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Home as HomeIcon } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { Container } from '@/components/common/Container';
-import { Button } from '@/components/common/Button';
-import { fadeInUp } from '@/utils/animations';
 
 export function NotFound() {
   return (
     <>
-      <Helmet>
-        <title>404 - Page Not Found • Sandeep S</title>
-      </Helmet>
-      
-      <div className="min-h-screen flex items-center justify-center">
-        <Container>
-          <motion.div
-            initial="initial"
-            animate="animate"
-            variants={fadeInUp}
-            className="text-center"
-          >
-            <h1 className="text-9xl font-bold text-gray-300 dark:text-gray-700 mb-4">404</h1>
-            <h2 className="text-3xl font-bold mb-4">Page Not Found</h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
-              The page you're looking for doesn't exist or has been moved.
-            </p>
-            <Link to="/">
-              <Button className="inline-flex items-center gap-2">
-                <HomeIcon size={20} />
-                Back to Home
-              </Button>
-            </Link>
-          </motion.div>
-        </Container>
-      </div>
+      <Helmet><title>Page not found — Sandeep Satheesh</title><meta name="robots" content="noindex" /></Helmet>
+      <Container className="flex min-h-[70svh] flex-col items-start justify-center">
+        <p className="eyebrow mb-5 text-[var(--accent)]">404 / A wrong turn</p>
+        <h1 className="section-heading">Nothing here <em>just yet.</em></h1>
+        <p className="mb-8 mt-5 text-sm text-[var(--muted)]">This page doesn’t exist. My projects are a better place to start.</p>
+        <Link to="/" className="button"><ArrowLeft size={15} /> Back home</Link>
+      </Container>
     </>
   );
 }

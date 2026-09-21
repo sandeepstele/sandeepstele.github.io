@@ -5,13 +5,10 @@ export function ContactPage() {
   return (
     <>
       <Helmet>
-        <title>Contact • Sandeep S</title>
-        <meta name="description" content="Get in touch with Sandeep S for collaborations, opportunities, or just to say hello." />
+        <title>Contact — Sandeep Satheesh</title>
+        <meta name="description" content="Contact Sandeep Satheesh about machine learning, software engineering, and collaborations." />
       </Helmet>
-      
-      <div className="pt-24">
-        <Contact />
-      </div>
+      <div className="flex min-h-[calc(100svh-170px)] flex-col justify-center"><Contact standalone /></div>
     </>
   );
 }

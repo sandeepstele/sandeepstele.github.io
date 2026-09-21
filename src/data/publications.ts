@@ -2,18 +2,12 @@ import { Publication } from '@/types';
 
 export const publications: Publication[] = [
   {
-    id: 'ieee-csnt-2025',
+    id: 'knee-osteoarthritis',
     title: 'Knee Osteoarthritis Detection & Grading',
-    authors: 'Sandeep S, et al.',
-    venue: 'IEEE CSNT 2025 (VIT Bhopal)',
-    year: '2025',
+    venue: 'IEEE CSNT ’25 · Indian Patent',
+    year: '2024 – 2025',
+    description:
+      'Developed ML pipelines across knee X-rays and clinical/radiological data, training EfficientNetB3 with ImageNet transfer learning, XGBoost, and FCNN models for binary detection and five-class severity grading. Achieved 95.2% detection accuracy, 84% grading accuracy, and 0.924 AUC in clinical deep-learning experiments.',
     link: 'https://ieeexplore.ieee.org/document/10968009',
-  },
-  {
-    id: 'indian-patent',
-    title: 'KOA Prediction & Grading via Late-Fusion + LLM/RAG Insights',
-    authors: 'Sandeep S',
-    venue: 'Indian Patent Application No. 202541071393 A (Filed: 28 Jul \'25; Pub: 01 Aug \'25)',
-    year: '2025',
   },
 ];

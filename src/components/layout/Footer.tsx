@@ -1,43 +1,17 @@
+import { ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/common/Container';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { profile } from '@/data/profile';
 
 export function Footer() {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <footer className="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 py-8">
+    <footer className="border-t border-[var(--line)] py-7">
       <Container>
-        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <div className="text-gray-600 dark:text-gray-400 text-sm">
-            © {currentYear} Sandeep S. All rights reserved.
-          </div>
-          
-          <div className="flex space-x-6">
-            <a
-              href="https://github.com/sandeepstele"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark transition-colors"
-              aria-label="GitHub"
-            >
-              <Github size={20} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/sandeepstele/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark transition-colors"
-              aria-label="LinkedIn"
-            >
-              <Linkedin size={20} />
-            </a>
-            <a
-              href="mailto:sandeep.sath7@gmail.com"
-              className="text-gray-600 dark:text-gray-400 hover:text-primary-light dark:hover:text-primary-dark transition-colors"
-              aria-label="Email"
-            >
-              <Mail size={20} />
-            </a>
+        <div className="flex flex-col justify-between gap-5 text-[11px] text-[var(--muted)] sm:flex-row sm:items-center">
+          <p>© {new Date().getFullYear()} {profile.name}<span className="mx-3 text-[var(--line)]">/</span>Always a work in progress.</p>
+          <div className="flex gap-6">
+            <a href={profile.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-[var(--accent)]">GitHub <ArrowUpRight size={12} /></a>
+            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-[var(--accent)]">LinkedIn <ArrowUpRight size={12} /></a>
+            <a href={`mailto:${profile.email}`} className="hover:text-[var(--accent)]">Email</a>
           </div>
         </div>
       </Container>
